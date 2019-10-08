@@ -7,3 +7,12 @@ sudo apt-get install certbot
 sudo apt install python-certbot-nginx
 
 sudo certbot --nginx -d sub.domain.com
+
+
+sudo nano /etc/nginx/snippets/ssl-sub.domain.com.conf
+******************************************************************************************************************************
+
+ssl_certificate /etc/letsencrypt/live/sub.domain.com/fullchain.pem;
+ssl_certificate_key /etc/letsencrypt/live/sub.domain.com/privkey.pem;
+
+******************************************************************************************************************************
