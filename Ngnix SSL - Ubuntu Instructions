@@ -1,0 +1,9 @@
+
+
+sudo apt-get update
+
+sudo apt-get install certbot
+
+sudo apt install python-certbot-nginx
+
+sudo certbot --nginx -d sub.domain.com
